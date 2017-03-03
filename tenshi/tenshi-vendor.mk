@@ -84,7 +84,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     vendor/bq/tenshi/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/bq/tenshi/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/bq/tenshi/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/bq/tenshi/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     vendor/bq/tenshi/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     vendor/bq/tenshi/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
@@ -123,11 +122,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/bq/tenshi/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/bq/tenshi/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
-    vendor/bq/tenshi/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/bq/tenshi/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/bq/tenshi/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/bq/tenshi/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/bq/tenshi/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/bq/tenshi/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -488,6 +484,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     CNEService \
     com.qualcomm.location \
+    dpmserviceapp \
     qcrilmsgtunnel \
     QtiTetherService \
     colorservice \
