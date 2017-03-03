@@ -121,6 +121,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/tenshi/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/tenshi/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
+    vendor/bq/tenshi/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
+    vendor/bq/tenshi/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
     vendor/bq/tenshi/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/bq/tenshi/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/bq/tenshi/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
@@ -129,6 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/bq/tenshi/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/tenshi/proprietary/lib/libOmxSwVdec.so:system/lib/libOmxSwVdec.so \
     vendor/bq/tenshi/proprietary/lib/libOmxSwVencMpeg4.so:system/lib/libOmxSwVencMpeg4.so \
     vendor/bq/tenshi/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
@@ -345,6 +348,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_qtech_8856_eeprom.so:system/vendor/lib/libmmcamera_qtech_8856_eeprom.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_qtech_gt24c64a_eeprom.so:system/vendor/lib/libmmcamera_qtech_gt24c64a_eeprom.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_qtech_z5675ae_eeprom.so:system/vendor/lib/libmmcamera_qtech_z5675ae_eeprom.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_s5k3p3.so:system/vendor/lib/libmmcamera_s5k3p3.so \
