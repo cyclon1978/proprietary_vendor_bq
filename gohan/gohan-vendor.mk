@@ -425,6 +425,40 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
     vendor/bq/gohan/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
+# fix camera functionallity hack
+PRODUCT_COPY_FILES += \
+    vendor/bq/gohan/proprietary/lib/hw/gralloc.msm8952.so:system/lib/hw/gralloc.msm8952.so \
+    vendor/bq/gohan/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx219_cmb104_chromatix.xml:system/etc/camera/imx219_cmb104_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx219_d8n03d_chromatix.xml:system/etc/camera/imx219_d8n03d_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx298_cmb087qr_chromatix.xml:system/etc/camera/imx298_cmb087qr_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_5_1.fw:system/etc/firmware/cpp_firmware_v1_5_1.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_booyi.img:system/etc/firmware/synaptics_firmware_booyi.img \
+    vendor/bq/gohan/proprietary/lib/hw/gralloc.msm8952.so:system/lib/hw/gralloc.msm8952.so
+
 PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService \
