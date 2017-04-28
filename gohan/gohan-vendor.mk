@@ -459,6 +459,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_booyi.img:system/etc/firmware/synaptics_firmware_booyi.img \
     vendor/bq/gohan/proprietary/lib/hw/gralloc.msm8952.so:system/lib/hw/gralloc.msm8952.so
 
+# fix audio functionallity hack
+PRODUCT_COPY_FILES += \
+	vendor/bq/gohan/proprietary/lib/hw/audio.primary.msm8952.so:system/lib/hw/audio.primary.msm8952.so
+
 PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService \
