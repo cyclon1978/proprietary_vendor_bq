@@ -1,3 +1,4 @@
+# Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,6 +48,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:system/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_Headset_cal.acdb:system/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:system/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
+    vendor/bq/gohan/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx219_cmb104_chromatix.xml:system/etc/camera/imx219_cmb104_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx219_d8n03d_chromatix.xml:system/etc/camera/imx219_d8n03d_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx298_cmb087qr_chromatix.xml:system/etc/camera/imx298_cmb087qr_chromatix.xml \
     vendor/bq/gohan/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/bq/gohan/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/bq/gohan/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
@@ -58,6 +64,15 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/drc/drc_cfg_AZ.txt:system/etc/drc/drc_cfg_AZ.txt \
     vendor/bq/gohan/proprietary/etc/firmware/DE.o.msm8952:system/etc/firmware/DE.o.msm8952 \
     vendor/bq/gohan/proprietary/etc/firmware/DE.o.msm8976:system/etc/firmware/DE.o.msm8976 \
+    vendor/bq/gohan/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/bq/gohan/proprietary/etc/firmware/a530_pfp.fw:system/etc/firmware/a530_pfp.fw \
     vendor/bq/gohan/proprietary/etc/firmware/a530_pm4.fw:system/etc/firmware/a530_pm4.fw \
     vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
@@ -66,8 +81,23 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_5_1.fw:system/etc/firmware/cpp_firmware_v1_5_1.fw \
     vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
+    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_booyi.img:system/etc/firmware/synaptics_firmware_booyi.img \
     vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly_auo.img:system/etc/firmware/synaptics_firmware_truly_auo.img \
     vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly_lg.img:system/etc/firmware/synaptics_firmware_truly_lg.img \
     vendor/bq/gohan/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
@@ -86,6 +116,13 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/bq/gohan/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/bq/gohan/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/android.hardware.camera.full.xml:system/etc/permissions/android.hardware.camera.full.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.bqservices.system.xml:system/etc/permissions/bq.software.bqservices.system.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.camera.full_support.xml:system/etc/permissions/bq.software.qcom.camera.full_support.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.m.gohan.xml:system/etc/permissions/bq.software.qcom.m.gohan.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.m.xml:system/etc/permissions/bq.software.qcom.m.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.n.gohan.xml:system/etc/permissions/bq.software.qcom.n.gohan.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.n.xml:system/etc/permissions/bq.software.qcom.n.xml \
     vendor/bq/gohan/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -112,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/bq/gohan/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/bq/gohan/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
+    vendor/bq/gohan/proprietary/lib/libcam.vidhance.so:system/lib/libcam.vidhance.so \
     vendor/bq/gohan/proprietary/lib/libfp_client.so:system/lib/libfp_client.so \
     vendor/bq/gohan/proprietary/lib/libfpnav.so:system/lib/libfpnav.so \
     vendor/bq/gohan/proprietary/lib/libfpservice.so:system/lib/libfpservice.so \
@@ -122,6 +160,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/gohan/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/bq/gohan/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
+    vendor/bq/gohan/proprietary/lib/libvidhance.so:system/lib/libvidhance.so \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
@@ -171,7 +211,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/bq/gohan/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libaudioparsers.so:system/vendor/lib/libaudioparsers.so \
     vendor/bq/gohan/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/bq/gohan/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/bq/gohan/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
@@ -351,12 +390,15 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_semco_cat24c64_eeprom.so:system/vendor/lib/libmmcamera_semco_cat24c64_eeprom.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so:system/vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sw_tnr.so:system/vendor/lib/libmmcamera_sw_tnr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
@@ -382,6 +424,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/bq/gohan/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
     vendor/bq/gohan/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:system/vendor/lib/libril-qc-ltedirectdisc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/bq/gohan/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
@@ -405,6 +448,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/bq/gohan/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/bq/gohan/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/bq/gohan/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
@@ -425,44 +469,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
     vendor/bq/gohan/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
-# fix camera functionallity hack
-PRODUCT_COPY_FILES += \
-    vendor/bq/gohan/proprietary/lib/hw/gralloc.msm8952.so:system/lib/hw/gralloc.msm8952.so \
-    vendor/bq/gohan/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
-    vendor/bq/gohan/proprietary/etc/camera/imx219_cmb104_chromatix.xml:system/etc/camera/imx219_cmb104_chromatix.xml \
-    vendor/bq/gohan/proprietary/etc/camera/imx219_d8n03d_chromatix.xml:system/etc/camera/imx219_d8n03d_chromatix.xml \
-    vendor/bq/gohan/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
-    vendor/bq/gohan/proprietary/etc/camera/imx298_cmb087qr_chromatix.xml:system/etc/camera/imx298_cmb087qr_chromatix.xml \
-    vendor/bq/gohan/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/cpp_firmware_v1_5_1.fw:system/etc/firmware/cpp_firmware_v1_5_1.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
-    vendor/bq/gohan/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
-    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
-    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
-    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
-    vendor/bq/gohan/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
-    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
-    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
-    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
-    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
-    vendor/bq/gohan/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
-    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_booyi.img:system/etc/firmware/synaptics_firmware_booyi.img
-
-# fix audio functionallity hack
-PRODUCT_COPY_FILES += \
-	vendor/bq/gohan/proprietary/lib/hw/audio.primary.msm8952.so:system/lib/hw/audio.primary.msm8952.so
-
 PRODUCT_PACKAGES += \
+    libaudioparsers \
+    libqct_resampler \
     libtime_genoff \
     TimeService \
     shutdownlistener \
